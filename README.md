@@ -14,7 +14,15 @@ bundle
 [Do the devise installation](#devise)  
 
 ```
+rails generate devise:install
+rails generate devise User
+rake db:migrate
+rails generate devise:views -v sessions
+```
+
+```
 rails webpacker:instal
+rails webpacker:install:vue
 rails vue:setup
 
 rails s
