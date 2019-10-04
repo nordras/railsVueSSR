@@ -6,10 +6,9 @@ Att
 Igor (Nordras)
 
 ```
-Clone it
-
+git init
+git clone git@github.com:nordras/railsVueSSR.git
 bundle
-
 ```
 
 [Do the devise installation](#devise)  
