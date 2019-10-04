@@ -25,7 +25,7 @@ rails webpacker:instal
 rails webpacker:install:vue
 rails vue:setup
 
-rails s
+foreman start
 ```
 
 ---
