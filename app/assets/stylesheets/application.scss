@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// Material design input
+.material-input {
+  label {
+    color: #3490dc;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+  }
+  input {
+    &:focus ~ label, &:valid ~ label     {
+      top:-20px;
+      font-size: 1rem;
+      color: #3490dc;
+    }
+    &:focus ~ .bar:before, &:focus ~ .bar:after {
+      width:50%;
+    }
+    &[type=submit]:disabled {
+      background: grey;
+    }
+  }
+  .bar {
+    &:before, &:after   {
+      content: '';
+      height: 3px;
+      width: 0;
+      bottom: 0px;
+      position: absolute;
+      background: #3490dc;
+      transition:0.2s ease all;
+    }
+    &:before {
+      left:50%;
+    }
+    &:after {
+      right:50%;
+    }
+    &.error:before, &.error:after   {
+      background: red;
+      width:50%;
+    }
+  }
+  .error {
+    color: red;
+    font-size: 1rem;
+  }
+}
