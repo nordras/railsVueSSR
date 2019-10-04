@@ -1,4 +1,9 @@
-# README
+# Rails Vue server side rendenring
+
+This project wase made based on web tutorials for personal studies, it' free
+
+Att
+Igor (Nordras)
 
 After bundle install (with devise gem), if you haven't yet you must do some manually setup:
 
