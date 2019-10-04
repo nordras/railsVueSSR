@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vuerails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Webpack assets -->
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- end -->
+  </head>
+
+  <body>
+    <style>
+      html, body {
+        height: 100%;
+      }
+    </style>
+   <div class="relative block h-full">
+      <div class="relative flex items-center justify-center h-full">
+        <div class="block login-box-container w-5/6 md:w-3/4 xl:w-1/4 ">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
