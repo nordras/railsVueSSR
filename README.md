@@ -5,6 +5,26 @@ This project wase made based on web tutorials for personal studies, it' free
 Att
 Igor (Nordras)
 
+```
+Clone it
+
+bundle
+
+```
+
+[Do the devise installation](#devise)  
+
+```
+rails webpacker:instal
+rails vue:setup
+
+rails s
+```
+
+---
+
+#### Devise install instructions <a name="devise"></a>
+
 After bundle install (with devise gem), if you haven't yet you must do some manually setup:
 
   1. Ensure you have defined default url options in your environments files. Here
@@ -32,23 +52,4 @@ After bundle install (with devise gem), if you haven't yet you must do some manu
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+---
